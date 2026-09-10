@@ -1,0 +1,31 @@
+KYOTO BEN — PHOTO SWAP GUIDE
+
+The website design is intentionally unchanged from your preferred V4.
+
+FASTEST WAY TO CHANGE A PHOTO
+1. Open assets/photos/
+2. Replace the photo using the SAME filename.
+3. Commit + push in GitHub Desktop.
+That is all.
+
+MORE FLEXIBLE WAY
+Open assets/site-config.js.
+Every image slot is named clearly. Change only the src filename.
+You can also change position to adjust the crop without editing CSS.
+
+Examples:
+hero = homepage bamboo image
+01-first-light-main / small
+02-west-east-main / small
+03-kimono-main / small
+04-geisha-main / small
+05-taiko-main / small
+06-hidden-main / small
+meet-ben = Meet Ben photo
+
+To change crop:
+position: "center center"
+position: "center 35%"  (moves crop upward/downward)
+position: "65% center"  (moves crop left/right)
+
+Do not edit index.html just to swap photos.

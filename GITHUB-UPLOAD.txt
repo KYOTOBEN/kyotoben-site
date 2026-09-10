@@ -1,0 +1,14 @@
+KYOTO BEN — GITHUB UPLOAD
+
+Upload the CONTENTS of this folder to the root of your GitHub repository.
+The repository root must directly contain index.html, assets/, CNAME, policy files, etc.
+
+GitHub Desktop:
+1. Copy these files into your local kyotoben-site repository folder.
+2. Commit to main.
+3. Push origin / Publish repository.
+4. GitHub website > repository Settings > Pages.
+5. Deploy from branch: main / (root).
+
+Photo changes later: edit only assets/site-config.js or replace files in assets/photos/.
+Stripe changes later: edit only assets/stripe-links.js.

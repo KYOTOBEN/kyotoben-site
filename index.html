@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KYOTO BEN | Private Kyoto Experiences</title>
+  <meta name="description" content="Private Kyoto experiences with Ben. Arashiyama at first light, Kyoto from west to east, kimono and tea, geisha shamisen boat, taiko and quiet Kyoto with kaiseki.">
+  <meta property="og:title" content="KYOTO BEN | Private Kyoto Experiences">
+  <meta property="og:description" content="Slower travel. A deeper Kyoto.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kyotoben.com/">
+  <meta property="og:image" content="https://kyotoben.com/assets/arashiyama-bamboo.jpg">
+  <meta name="theme-color" content="#1f2921">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#1d231e;
+      --deep:#1f2921;
+      --deep2:#121713;
+      --moss:#667166;
+      --paper:#f5f0e6;
+      --paper2:#fbf7ee;
+      --red:#a34331;
+      --gold:#9c8962;
+      --muted:#6c7069;
+      --line:rgba(29,35,30,.14);
+      --white:#fffdf7;
+      --shadow:0 26px 80px rgba(19,25,20,.12);
+      --serif:"Libre Caslon Display","Noto Serif JP",serif;
+      --sans:"DM Sans",system-ui,sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;background:var(--paper)}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:999;background-image:radial-gradient(rgba(34,42,35,.045) .7px,transparent .7px);background-size:5px 5px;opacity:.35;mix-blend-mode:multiply}
+    a{color:inherit;text-decoration:none}
+    button,input,textarea,select{font:inherit}
+    img{display:block;width:100%;height:100%;object-fit:cover}
+    .wrap{width:min(1240px,calc(100% - 56px));margin:auto}
+    .eyebrow{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--red);font-weight:600}
+    .topnote{background:var(--deep2);color:#eee7da;text-align:center;padding:8px 18px;font-size:10px;letter-spacing:.18em;text-transform:uppercase}
+
+    header{position:sticky;top:0;z-index:100;background:rgba(245,240,230,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(29,35,30,.08)}
+    .nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:13px}
+    .brand img{width:45px;height:45px;border-radius:50%;object-fit:cover;filter:saturate(.88) contrast(.98)}
+    .brandword{font-size:12px;letter-spacing:.25em;font-weight:600}
+    .brandword small{display:block;font-size:8px;letter-spacing:.17em;color:#7c8079;font-weight:500;margin-top:2px}
+    nav{display:flex;align-items:center;gap:27px;font-size:11px}
+    nav>a:not(.btn){opacity:.72}
+    nav>a:hover{opacity:1}
+    .btn{border:1px solid var(--deep);background:var(--deep);color:#fffaf0;min-height:46px;padding:12px 18px;display:inline-flex;align-items:center;justify-content:center;font-size:11px;letter-spacing:.05em;cursor:pointer;transition:.22s ease}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 10px 28px rgba(31,41,33,.16)}
+    .btn.ghost{background:transparent;color:var(--deep)}
+    .btn.red{background:var(--red);border-color:var(--red)}
+
+    .hero{min-height:780px;position:relative;display:grid;grid-template-columns:.9fr 1.1fr;overflow:hidden;border-bottom:1px solid var(--line)}
+    .hero:before{content:"";position:absolute;left:-6vw;top:10%;width:48vw;height:48vw;border:1px solid rgba(88,100,86,.13);border-radius:50%;transform:rotate(-12deg);pointer-events:none}
+    .hero:after{content:"竹";position:absolute;left:44%;top:9%;font-family:"Noto Serif JP",serif;font-size:210px;color:rgba(36,47,38,.035);line-height:1;pointer-events:none}
+    .hero-copy{position:relative;z-index:3;padding:105px 5.5vw 92px max(28px,calc((100vw - 1240px)/2));display:flex;flex-direction:column;justify-content:center}
+    .hero-logo{width:104px;height:104px;border-radius:50%;overflow:hidden;margin-bottom:31px;box-shadow:0 12px 34px rgba(21,28,23,.08)}
+    .hero h1{font-family:var(--serif);font-size:clamp(66px,7vw,112px);font-weight:400;line-height:.89;letter-spacing:-.042em;margin:12px 0 28px;max-width:640px}
+    .hero h1 small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.32em;color:var(--red);text-transform:uppercase;margin-bottom:23px;font-weight:600}
+    .hero h1 em{font-style:normal;color:#39443b}
+    .hero p{font-family:"Noto Serif JP",serif;font-size:18px;line-height:1.9;color:#4f554f;max-width:560px;margin:0 0 33px}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .hero-note{display:flex;gap:30px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:36px;padding-top:18px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#71766f}
+    .hero-art{position:relative;min-height:780px;background:#d7dbd3;overflow:hidden}
+    .hero-art img{position:absolute;inset:-1%;width:102%;height:102%;object-position:center 47%;filter:saturate(.9) contrast(.98)}
+    .hero-art:before{content:"";position:absolute;z-index:2;inset:0;background:linear-gradient(90deg,var(--paper) 0%,rgba(245,240,230,.94) 5%,rgba(245,240,230,.35) 20%,rgba(245,240,230,0) 42%),linear-gradient(180deg,rgba(0,0,0,0) 58%,rgba(18,25,20,.32) 100%)}
+    .hero-art:after{content:"";position:absolute;z-index:2;inset:0;background:radial-gradient(circle at 45% 50%,transparent 38%,rgba(245,240,230,.15) 67%,rgba(245,240,230,.8) 100%);mix-blend-mode:screen}
+    .hero-caption{position:absolute;z-index:4;bottom:32px;right:40px;color:#fffdf8;text-align:right;font-size:9px;letter-spacing:.2em;text-transform:uppercase;text-shadow:0 2px 18px rgba(0,0,0,.25)}
+
+    .intro{position:relative;padding:118px 0 122px;overflow:hidden}
+    .intro:before{content:"";position:absolute;right:-120px;top:20px;width:500px;height:500px;border-radius:50%;border:1px solid rgba(163,67,49,.12)}
+    .intro-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:100px;align-items:start}
+    .intro h2{font-family:var(--serif);font-size:clamp(50px,5.7vw,82px);line-height:1;font-weight:400;letter-spacing:-.03em;margin:9px 0}
+    .intro-copy{font-family:"Noto Serif JP",serif;font-size:20px;line-height:1.95;color:#484e48;max-width:720px}
+    .intro-copy p{margin-top:0}
+    .kanji-note{font-family:"Noto Serif JP",serif;font-size:12px;letter-spacing:.28em;writing-mode:vertical-rl;color:rgba(35,45,37,.38);position:absolute;right:4vw;top:115px}
+
+    .collection-head{padding:0 0 54px}
+    .collection-head .inner{display:flex;align-items:end;justify-content:space-between;gap:50px}
+    .collection-head h2{font-family:var(--serif);font-size:clamp(46px,5vw,74px);font-weight:400;line-height:1;margin:8px 0 0}
+    .collection-head p{max-width:470px;color:var(--muted);margin:0;font-family:"Noto Serif JP",serif;font-size:14px}
+
+    .experience{position:relative;padding:118px 0;border-top:1px solid var(--line);overflow:hidden}
+    .experience:nth-child(even){background:linear-gradient(90deg,rgba(255,253,247,.35),rgba(255,253,247,.74) 52%,rgba(255,253,247,.18))}
+    .experience:before{content:attr(data-kanji);position:absolute;right:1.6vw;top:38px;font-family:"Noto Serif JP",serif;font-size:118px;color:rgba(41,53,43,.035);writing-mode:vertical-rl;letter-spacing:.08em;pointer-events:none}
+    .exp-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:86px;align-items:center}
+    .experience.reverse .visual{order:2}
+    .experience.reverse .exp-copy{order:1}
+    .visual{position:relative;min-height:540px;display:flex;align-items:center}
+    .main-img{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;filter:drop-shadow(0 25px 55px rgba(31,41,33,.12));isolation:isolate}
+    .main-img.tall{aspect-ratio:4/5;max-height:680px}
+    .main-img img{filter:saturate(.92) contrast(.98)}
+    .main-img:after{content:"";position:absolute;inset:-1px;background:radial-gradient(ellipse at center,transparent 55%,rgba(245,240,230,.25) 72%,var(--paper) 98%);z-index:2;pointer-events:none}
+    .main-img.soft img{-webkit-mask-image:radial-gradient(ellipse at center,black 55%,rgba(0,0,0,.87) 67%,transparent 98%);mask-image:radial-gradient(ellipse at center,black 55%,rgba(0,0,0,.87) 67%,transparent 98%)}
+    .small-img{position:absolute;width:35%;aspect-ratio:1/1;right:-20px;bottom:-30px;overflow:hidden;z-index:5;box-shadow:0 22px 58px rgba(24,31,25,.16)}
+    .small-img img{-webkit-mask-image:radial-gradient(ellipse at center,black 58%,rgba(0,0,0,.86) 73%,transparent 99%);mask-image:radial-gradient(ellipse at center,black 58%,rgba(0,0,0,.86) 73%,transparent 99%)}
+    .reverse .small-img{right:auto;left:-22px}
+    .brush-line{position:absolute;width:130px;height:2px;background:linear-gradient(90deg,transparent,var(--red),transparent);left:12%;top:4%;transform:rotate(-8deg);opacity:.55}
+    .exp-num{font-family:var(--serif);font-size:30px;color:var(--gold);margin-bottom:20px}
+    .exp-copy{position:relative}
+    .exp-copy h3{font-family:var(--serif);font-size:clamp(44px,4.5vw,67px);font-weight:400;line-height:1.02;letter-spacing:-.03em;margin:10px 0 21px}
+    .exp-copy .lead{font-family:"Noto Serif JP",serif;font-size:16px;line-height:1.95;color:#4e544e;margin:0 0 24px;max-width:560px}
+    .facts{display:flex;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:28px 0 23px}
+    .fact{padding:15px 21px 15px 0;margin-right:21px;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#757a73}
+    .fact strong{display:block;color:var(--ink);font-size:13px;letter-spacing:0;text-transform:none;margin-top:2px;font-weight:500}
+    .pricebox{display:flex;gap:26px;align-items:end;flex-wrap:wrap;margin:23px 0 18px}
+    .priceblock small{display:block;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#777b74}
+    .priceblock strong{display:block;font-family:var(--serif);font-size:31px;font-weight:400;line-height:1.1;margin-top:3px}
+    .included{border-left:2px solid var(--red);padding-left:14px;color:#626760;font-size:12px;line-height:1.75;margin:20px 0}
+    .actions{display:flex;gap:9px;flex-wrap:wrap}
+    .fine{font-size:10px;color:#7a7e77;margin-top:12px}
+
+    .editorial-break{position:relative;background:var(--deep);color:#eee8dc;padding:120px 0;overflow:hidden}
+    .editorial-break:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 12% 40%,rgba(163,67,49,.16),transparent 30%),radial-gradient(circle at 88% 65%,rgba(160,147,109,.10),transparent 34%)}
+    .editorial-break:after{content:"円";position:absolute;right:5vw;top:-70px;font-family:"Noto Serif JP",serif;font-size:330px;color:rgba(255,255,255,.025)}
+    .editorial-grid{position:relative;z-index:2;display:grid;grid-template-columns:.7fr 1.3fr;gap:90px;align-items:start}
+    .editorial-break blockquote{font-family:var(--serif);font-size:clamp(46px,5.2vw,76px);line-height:1.05;margin:0;font-weight:400}
+    .editorial-break p{font-family:"Noto Serif JP",serif;color:#cfc9bc;max-width:570px;font-size:15px;line-height:1.9}
+    .editorial-break .eyebrow{color:#d69078}
+
+    .booking{position:relative;padding:122px 0 108px;overflow:hidden}
+    .booking:before{content:"";position:absolute;left:-180px;bottom:-200px;width:560px;height:560px;border:1px solid rgba(91,108,92,.12);border-radius:50%}
+    .booking-grid{display:grid;grid-template-columns:.84fr 1.16fr;gap:82px;align-items:start}
+    .booking h2{font-family:var(--serif);font-size:clamp(48px,5vw,74px);line-height:1.02;font-weight:400;margin:10px 0 21px}
+    .booking-copy>p{font-family:"Noto Serif JP",serif;color:#555b55;line-height:1.9}
+    .policy-card{margin-top:31px;border-top:1px solid var(--line);padding-top:23px}
+    .policy-card strong{display:block;font-family:"Noto Serif JP",serif;font-size:17px;margin-bottom:8px}
+    .policy-card p{font-size:13px;color:#5b605a;margin:0;line-height:1.8}
+    .business-links{display:flex;gap:13px;flex-wrap:wrap;margin-top:18px}
+    .textlink{font-size:11px;text-decoration:underline;text-underline-offset:4px}
+    .booking-card{position:relative;background:rgba(251,247,238,.86);border:1px solid rgba(29,35,30,.13);padding:31px;box-shadow:var(--shadow);backdrop-filter:blur(8px)}
+    .booking-card:before{content:"予約";position:absolute;right:20px;top:14px;font-family:"Noto Serif JP",serif;font-size:54px;color:rgba(35,44,36,.035)}
+    .booking-card h3{font-family:var(--serif);font-size:34px;font-weight:400;margin:0 0 20px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .field{display:flex;flex-direction:column;gap:6px}
+    .field.full{grid-column:1/-1}
+    label{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#747a73}
+    input,select,textarea{width:100%;border:1px solid var(--line);background:#fffdf8;padding:12px 13px;color:var(--ink);border-radius:0;outline:none}
+    input:focus,select:focus,textarea:focus{border-color:rgba(31,41,33,.45)}
+    textarea{min-height:108px;resize:vertical}
+    .booking-card .btn{width:100%;margin-top:14px}
+    .secure{font-size:10px;color:#7a7f78;margin-top:11px}
+    .secure a{text-decoration:underline;text-underline-offset:3px}
+
+    .about{position:relative;background:#e9e4d9;padding:110px 0;overflow:hidden}
+    .about-grid{display:grid;grid-template-columns:.94fr 1.06fr;gap:82px;align-items:center}
+    .about-photo{position:relative;aspect-ratio:4/5;overflow:hidden}
+    .about-photo img{-webkit-mask-image:radial-gradient(ellipse at center,black 57%,rgba(0,0,0,.88) 72%,transparent 98%);mask-image:radial-gradient(ellipse at center,black 57%,rgba(0,0,0,.88) 72%,transparent 98%)}
+    .about h2{font-family:var(--serif);font-size:clamp(47px,5vw,70px);font-weight:400;line-height:1.04;margin:10px 0 21px}
+    .about p{font-family:"Noto Serif JP",serif;color:#515751;line-height:1.9}
+    .ticks{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:31px}
+    .tick{border-top:1px solid var(--line);padding-top:13px;font-size:12px}
+
+    .business{padding:75px 0;background:var(--paper2);border-top:1px solid var(--line)}
+    .business-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+    .business h3{font-family:var(--serif);font-size:33px;font-weight:400;margin:8px 0 13px}
+    .business p{font-size:13px;color:#5e635d;line-height:1.8}
+
+    footer{background:#111612;color:#e9e3d8;padding:58px 0 29px}
+    .footer-grid{display:grid;grid-template-columns:1.25fr .75fr .9fr .85fr;gap:45px}
+    .footer-logo{width:92px;height:92px;border-radius:50%;overflow:hidden;filter:saturate(.8)}
+    .footer-brand{font-size:12px;letter-spacing:.25em;margin-top:15px}
+    .footer-title{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#999f97;margin-bottom:14px}
+    .footer-links{display:grid;gap:9px;font-size:11px;color:#d7d1c6}
+    .footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid rgba(255,255,255,.1);margin-top:45px;padding-top:19px;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#8f958d}
+
+    .modal{position:fixed;inset:0;background:rgba(11,15,12,.6);display:none;align-items:center;justify-content:center;padding:25px;z-index:300;backdrop-filter:blur(6px)}
+    .modal.open{display:flex}
+    .modal-card{background:var(--paper2);width:min(520px,100%);padding:34px;box-shadow:0 32px 90px rgba(0,0,0,.28);position:relative;border:1px solid rgba(255,255,255,.22)}
+    .modal-card h3{font-family:var(--serif);font-size:34px;font-weight:400;margin:8px 0 12px}
+    .modal-card p{font-family:"Noto Serif JP",serif;color:#565c56}
+    .close{position:absolute;right:14px;top:10px;border:0;background:none;font-size:28px;cursor:pointer;color:#5a5f59}
+    .modal-actions{display:flex;gap:9px;margin-top:22px}
+
+    @media(max-width:980px){
+      nav>a:not(.btn){display:none}.hero{grid-template-columns:1fr;min-height:auto}.hero-copy{padding:82px 28px 58px}.hero-art{min-height:580px}.hero-art:before{background:linear-gradient(180deg,var(--paper) 0%,rgba(245,240,230,.15) 18%,rgba(0,0,0,0) 62%,rgba(18,25,20,.28))}.intro-grid,.exp-grid,.editorial-grid,.booking-grid,.about-grid,.business-grid{grid-template-columns:1fr}.intro-grid{gap:36px}.experience{padding:90px 0}.experience.reverse .visual,.experience.reverse .exp-copy{order:initial}.visual{min-height:0}.main-img.tall{aspect-ratio:4/3;max-height:none}.small-img{width:30%;right:2%;bottom:-25px}.reverse .small-img{left:auto;right:2%}.exp-grid{gap:62px}.kanji-note{display:none}.footer-grid{grid-template-columns:1fr 1fr}.booking-grid,.about-grid{gap:50px}
+    }
+    @media(max-width:620px){
+      .wrap{width:min(100% - 30px,1240px)}.topnote{font-size:8px}.nav{height:66px}.brandword small{display:none}.nav .btn{padding:10px 13px;min-height:40px}.hero h1{font-size:58px}.hero p{font-size:16px}.hero-art{min-height:460px}.intro{padding:82px 0}.intro-copy{font-size:17px}.collection-head .inner{display:block}.collection-head p{margin-top:18px}.experience{padding:82px 0}.exp-copy h3{font-size:43px}.small-img{width:36%;bottom:-18px}.facts{display:grid;grid-template-columns:1fr 1fr}.fact{margin-right:0}.actions{display:grid}.actions .btn{width:100%}.editorial-break{padding:90px 0}.booking{padding:90px 0}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.ticks{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-bottom{display:grid}.modal-actions{display:grid}.modal-actions .btn{width:100%}
+    }
+  </style>
+</head>
+<body>
+  <div class="topnote">Kyoto based private guide · Cultural experiences · Photography</div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><img src="assets/photos/brand-logo.jpg" data-photo="header-logo" alt="KYOTO BEN logo"><span class="brandword">KYOTO BEN<small>PRIVATE KYOTO EXPERIENCES</small></span></a>
+      <nav>
+        <a href="#experiences">Experiences</a>
+        <a href="#about">About Ben</a>
+        <a href="#booking">Booking</a>
+        <a class="btn" href="#booking">Plan your Kyoto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="hero-logo"><img src="assets/photos/brand-logo.jpg" data-photo="hero-logo" alt="KYOTO BEN bamboo mark"></div>
+        <div class="eyebrow">Private guide · Kyoto, Japan</div>
+        <h1><small>Slower travel. A deeper Kyoto.</small>Kyoto with <em>space to feel it.</em></h1>
+        <p>Private days shaped around history, local life, beautiful photographs and the quiet details that make Kyoto stay with you.</p>
+        <div class="hero-actions"><a class="btn" href="#experiences">Explore experiences</a><a class="btn ghost" href="#booking">Ask about your dates</a></div>
+        <div class="hero-note"><span>Private & small group</span><span>English & Chinese</span><span>Kyoto based</span></div>
+      </div>
+      <div class="hero-art"><img src="assets/photos/hero-bamboo.jpg" data-photo="hero" alt="Sunlight through the Arashiyama bamboo grove"><div class="hero-caption">Arashiyama · Kyoto<br>Photographed in full resolution</div></div>
+    </section>
+
+    <section class="intro">
+      <div class="kanji-note">京都 · 一期一会 · 侘寂</div>
+      <div class="wrap intro-grid">
+        <div><div class="eyebrow">The Kyoto Ben approach</div><h2>Not a checklist.<br>A real day in Kyoto.</h2></div>
+        <div class="intro-copy"><p>Some Kyoto days should begin before the city wakes. Others should slow down for tea, a riverside pause, a small shrine or one last photograph before sunset.</p><p>I build each experience around timing, atmosphere and the people I am guiding. The plan matters. The feeling matters more.</p></div>
+      </div>
+    </section>
+
+    <section id="experiences" class="collection-head wrap"><div class="inner"><div><div class="eyebrow">Signature collection</div><h2>Six ways into Kyoto.</h2></div><p>Each experience has its own pace and point of view. Choose one that feels right, or ask me to shape a private day around you.</p></div></section>
+
+    <section class="experience" id="first-light" data-kanji="朝竹">
+      <div class="wrap exp-grid">
+        <div class="visual"><span class="brush-line"></span><div class="main-img soft"><img src="assets/photos/01-first-light-main.png" data-photo="first-light-main" alt="Ben speaking with a guest in Arashiyama"></div><div class="small-img"><img src="assets/photos/01-first-light-small.jpg" data-photo="first-light-small" alt="Monkey Park Iwatayama feeding experience"></div></div>
+        <div class="exp-copy"><div class="exp-num">01</div><div class="eyebrow">Arashiyama at first light</div><h3>Kyoto: Arashiyama Bamboo Forest at First Light</h3><p class="lead">See Arashiyama before the day gathers speed. Walk through bamboo, hear the stories behind this historic district and finish with one included highlight of your choice.</p>
+          <div class="facts"><div class="fact">Duration<strong>2.5 hours</strong></div><div class="fact">Style<strong>Private or join group</strong></div><div class="fact">Included<strong>One admission choice</strong></div></div>
+          <div class="pricebox"><div class="priceblock"><small>Private</small><strong>¥25,000</strong></div><div class="priceblock"><small>Join group</small><strong>¥6,000 / person</strong></div></div>
+          <div class="included">Choose one: Monkey Park Iwatayama admission or a UNESCO World Heritage temple admission.</div>
+          <div class="actions"><button class="btn red inquiry" data-tour="Arashiyama Bamboo Forest at First Light">Check availability</button></div>
+          <div class="fine">No payment is taken before availability is confirmed.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience reverse" id="west-east" data-kanji="西東">
+      <div class="wrap exp-grid">
+        <div class="visual"><div class="main-img soft"><img src="assets/photos/02-west-east-main.jpg" data-photo="west-east-main" alt="Kyoto in autumn along the Kamo River"></div><div class="small-img"><img src="assets/photos/02-west-east-small.jpg" data-photo="west-east-small" alt="Nishiki Market in central Kyoto"></div></div>
+        <div class="exp-copy"><div class="exp-num">02</div><div class="eyebrow">Private full day</div><h3>Kyoto West to East</h3><p class="lead">Start among the bamboo in western Kyoto, move through shogun history and Nishiki Market, then enter the old streets and flower districts of Gion.</p>
+          <div class="facts"><div class="fact">Route<strong>Arashiyama to Gion</strong></div><div class="fact">Style<strong>Private full day</strong></div><div class="fact">Included<strong>One Kyoto drink or sweet</strong></div></div>
+          <div class="pricebox"><div class="priceblock"><small>Private full day</small><strong>¥50,000</strong></div></div>
+          <div class="included">Includes one of Ben's recommended Kyoto drinks or traditional sweets along the way.</div>
+          <div class="actions"><button class="btn pay" data-key="westToEast" data-mode="deposit">Pay ¥10,000 deposit</button><button class="btn ghost pay" data-key="westToEast" data-mode="full">Pay in full</button></div>
+          <div class="fine">The deposit is part of the total price. It is not an additional fee.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="kimono" data-kanji="着物">
+      <div class="wrap exp-grid">
+        <div class="visual"><div class="main-img tall soft"><img src="assets/photos/03-kimono-main.jpg" data-photo="kimono-main" alt="Kimono cultural experience in Kyoto"></div><div class="small-img"><img src="assets/photos/03-kimono-small.jpg" data-photo="kimono-small" alt="Guests with their Kyoto tea ceremony teacher"></div></div>
+        <div class="exp-copy"><div class="exp-num">03</div><div class="eyebrow">Kimono · Tea · Photography</div><h3>Kyoto in Kimono</h3><p class="lead">Dress in kimono, experience Japanese tea and walk through the old capital with a private guide and photographer. Relax into the moment and leave with photographs that feel like your Kyoto.</p>
+          <div class="facts"><div class="fact">Duration<strong>2.5 hours</strong></div><div class="fact">Format<strong>Private experience</strong></div><div class="fact">Includes<strong>Kimono, tea, tour, photography</strong></div></div>
+          <div class="pricebox"><div class="priceblock"><small>Total price</small><strong>¥25,000</strong></div></div>
+          <div class="actions"><button class="btn pay" data-key="kimonoTeaPhoto" data-mode="deposit">Pay ¥10,000 deposit</button><button class="btn ghost pay" data-key="kimonoTeaPhoto" data-mode="full">Pay in full</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience reverse" id="geisha-boat" data-kanji="芸舟">
+      <div class="wrap exp-grid">
+        <div class="visual"><div class="main-img tall soft"><img src="assets/photos/04-geisha-main.jpg" data-photo="geisha-main" alt="Private Kyoto cultural boat experience"></div><div class="small-img"><img src="assets/photos/04-geisha-small.jpg" data-photo="geisha-small" alt="Kyoto lanterns at night"></div></div>
+        <div class="exp-copy"><div class="exp-num">04</div><div class="eyebrow">Private cultural experience</div><h3>Geisha Shamisen Boat & Kyoto Sake</h3><p class="lead">Spend an intimate hour on the water with shamisen, Kyoto sake and a cultural atmosphere that feels far removed from ordinary sightseeing.</p>
+          <div class="facts"><div class="fact">Duration<strong>1 hour</strong></div><div class="fact">Base group<strong>Up to 3 guests</strong></div><div class="fact">Availability<strong>Limited</strong></div></div>
+          <div class="pricebox"><div class="priceblock"><small>Up to 3 guests</small><strong>¥60,000</strong></div><div class="priceblock"><small>Each additional guest</small><strong>+ ¥16,000</strong></div></div>
+          <div class="actions"><button class="btn pay" data-key="geishaBoat" data-mode="deposit">Pay ¥10,000 deposit</button><button class="btn ghost geisha-full">Pay in full</button></div>
+          <div class="fine">For full payment, select your group size first. Provider availability is confirmed as part of the reservation process.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="taiko" data-kanji="鼓食">
+      <div class="wrap exp-grid">
+        <div class="visual"><div class="main-img tall soft"><img src="assets/photos/05-taiko-main.jpg" data-photo="taiko-main" alt="Traditional Japanese taiko performance"></div><div class="small-img"><img src="assets/photos/05-taiko-small.jpg" data-photo="taiko-small" alt="Kyoto food culture inside Nishiki Market"></div></div>
+        <div class="exp-copy"><div class="exp-num">05</div><div class="eyebrow">Taiko · Nishiki · Kyoto flavors</div><h3>Taiko Performance & Nishiki Market</h3><p class="lead">Feel the force and rhythm of traditional Japanese taiko, then step into Nishiki Market to explore the ingredients, snacks and everyday food culture behind Kyoto cuisine.</p>
+          <div class="facts"><div class="fact">Experience<strong>Taiko + food culture</strong></div><div class="fact">Area<strong>Central Kyoto</strong></div><div class="fact">Total price<strong>Confirmed with arrangement</strong></div></div>
+          <div class="pricebox"><div class="priceblock"><small>Reservation deposit</small><strong>¥10,000</strong></div></div>
+          <div class="included">The final price depends on the performance arrangement and group size. You will see and approve the total before full payment.</div>
+          <div class="actions"><button class="btn pay" data-key="taikoNishiki" data-mode="deposit">Pay ¥10,000 deposit</button><button class="btn ghost pay" data-key="taikoNishiki" data-mode="full">Pay in full after quote</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience reverse" id="hidden-kyoto" data-kanji="静味">
+      <div class="wrap exp-grid">
+        <div class="visual"><div class="main-img soft"><img src="assets/photos/06-hidden-main.jpg" data-photo="hidden-main" alt="Quiet Kyoto seen from a tatami room"></div><div class="small-img"><img src="assets/photos/06-hidden-small.jpg" data-photo="hidden-small" alt="A quiet traditional Kyoto lane"></div></div>
+        <div class="exp-copy"><div class="exp-num">06</div><div class="eyebrow">Ben's personal selection</div><h3>Hidden Kyoto & Kaiseki Lunch</h3><p class="lead">For guests who want quiet Kyoto and real Kyoto cuisine. Walk streets and places I genuinely recommend, then sit down for a proper kaiseki lunch chosen to fit the day.</p>
+          <div class="facts"><div class="fact">Style<strong>Quiet half day</strong></div><div class="fact">Focus<strong>Local Kyoto</strong></div><div class="fact">Cuisine<strong>Kaiseki lunch</strong></div></div>
+          <div class="pricebox"><div class="priceblock"><small>Reservation deposit</small><strong>¥10,000</strong></div></div>
+          <div class="included">The final price depends on the selected kaiseki restaurant, date and group size. You will see and approve the total before full payment.</div>
+          <div class="actions"><button class="btn pay" data-key="hiddenKyoto" data-mode="deposit">Pay ¥10,000 deposit</button><button class="btn ghost pay" data-key="hiddenKyoto" data-mode="full">Pay in full after quote</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-break"><div class="wrap editorial-grid"><div class="eyebrow">The Kyoto Ben way</div><div><blockquote>“A good Kyoto day leaves room for something you did not plan.”</blockquote><p>Timing matters. Stories matter. So do the pauses, the unexpected conversation and the small place you would have walked past alone.</p></div></div></section>
+
+    <section id="booking" class="booking">
+      <div class="wrap booking-grid">
+        <div class="booking-copy"><div class="eyebrow">Booking and payment</div><h2>Simple to reserve. Clear from the start.</h2><p>First Light begins with an availability check. For every other experience, you can reserve with a ¥10,000 deposit or pay the confirmed total in full through Stripe. Your card details are handled by Stripe and are never stored on this website.</p>
+          <div class="policy-card"><strong>Cancellation and refunds</strong><p>Cancel 7 or more calendar days before the scheduled tour start time for a full refund. Cancellations made fewer than 7 calendar days before the scheduled start time are non refundable. This applies to both deposits and full payments. If KYOTO BEN cancels a confirmed experience, the affected payment is refunded in full.</p></div>
+          <div class="business-links"><a class="textlink" href="cancellation.html">Full cancellation policy</a><a class="textlink" href="commercial-disclosure.html">特定商取引法に基づく表記</a><a class="textlink" href="privacy.html">Privacy</a><a class="textlink" href="terms.html">Terms</a></div>
+        </div>
+        <div class="booking-card"><h3>Ask about a date</h3><form id="inquiryForm"><div class="form-grid"><div class="field full"><label for="tour">Experience</label><select id="tour" name="tour"><option>Arashiyama Bamboo Forest at First Light</option><option>Kyoto West to East</option><option>Kyoto in Kimono</option><option>Geisha Shamisen Boat & Kyoto Sake</option><option>Taiko Performance & Nishiki Market</option><option>Hidden Kyoto & Kaiseki Lunch</option></select></div><div class="field"><label for="date">Preferred date</label><input id="date" name="date" type="date"></div><div class="field"><label for="guests">Guests</label><select id="guests" name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7+</option></select></div><div class="field"><label for="name">Name</label><input id="name" name="name" required></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div><div class="field full"><label for="notes">Questions or interests</label><textarea id="notes" name="notes" placeholder="Tell me what you would love to experience in Kyoto."></textarea></div></div><button class="btn" type="submit">Send booking inquiry</button><div class="secure">Support: <a href="mailto:booking@kyotoben.com">booking@kyotoben.com</a>. Please review our <a href="commercial-disclosure.html">Commercial Disclosure</a> before payment.</div></form></div>
+      </div>
+    </section>
+
+    <section id="about" class="about"><div class="wrap about-grid"><div class="about-photo"><img src="assets/photos/meet-ben.jpg" data-photo="meet-ben" alt="A vintage Kyoto memory with Ben and a guest"></div><div><div class="eyebrow">Meet Ben</div><h2>Local context changes the way Kyoto feels.</h2><p>I am Ben, a Kyoto based private guide. My tours focus on history, culture, food, photography and the everyday details that make this city more than a list of famous places.</p><div class="ticks"><div class="tick">Private and small group experiences</div><div class="tick">English and Chinese</div><div class="tick">Photography on selected experiences</div><div class="tick">Kyoto, Arashiyama, Gion and nearby journeys</div></div></div></div></section>
+
+    <section class="business"><div class="wrap business-grid"><div><div class="eyebrow">Business information</div><h3>KYOTO BEN</h3><p>Independent sole proprietor based in Kyoto, Japan. Tour services are provided under the trade name KYOTO BEN. Secure online card payments are processed by Stripe.</p></div><div><div class="eyebrow">Contact</div><h3>Questions before you book?</h3><p>Email <a href="mailto:booking@kyotoben.com"><u>booking@kyotoben.com</u></a><br>Instagram <a href="https://instagram.com/kyotoguideben" target="_blank" rel="noopener"><u>@kyotoguideben</u></a></p><div class="business-links"><a class="textlink" href="commercial-disclosure.html">Commercial Disclosure</a><a class="textlink" href="cancellation.html">Cancellation & Refunds</a><a class="textlink" href="privacy.html">Privacy Policy</a><a class="textlink" href="terms.html">Terms</a></div></div></div></section>
+  </main>
+
+  <footer><div class="wrap"><div class="footer-grid"><div><div class="footer-logo"><img src="assets/photos/brand-logo.jpg" data-photo="footer-logo" alt="KYOTO BEN logo"></div><div class="footer-brand">KYOTO BEN</div></div><div><div class="footer-title">Explore</div><div class="footer-links"><a href="#experiences">Experiences</a><a href="#about">About Ben</a><a href="#booking">Booking</a></div></div><div><div class="footer-title">Policies</div><div class="footer-links"><a href="commercial-disclosure.html">特定商取引法に基づく表記</a><a href="cancellation.html">Cancellation & Refunds</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div><div><div class="footer-title">Contact</div><div class="footer-links"><a href="mailto:booking@kyotoben.com">booking@kyotoben.com</a><a href="https://instagram.com/kyotoguideben" target="_blank" rel="noopener">@kyotoguideben</a><span>Kyoto, Japan</span></div></div></div><div class="footer-bottom"><span>© 2026 KYOTO BEN</span><span>Slower travel. A deeper Kyoto.</span></div></div></footer>
+
+  <div class="modal" id="paymentModal" aria-hidden="true"><div class="modal-card"><button class="close" aria-label="Close">×</button><div class="eyebrow">Secure reservation</div><h3 id="modalTitle">Complete your reservation</h3><p id="modalText"></p><div id="guestSize" style="display:none;margin-top:18px"><label for="boatGuests">Guests</label><select id="boatGuests"><option value="3">1 to 3 guests · ¥60,000</option><option value="4">4 guests · ¥76,000</option><option value="5">5 guests · ¥92,000</option><option value="6">6 guests · ¥108,000</option></select></div><div class="modal-actions"><a id="modalPrimary" class="btn" href="#booking">Continue</a><button class="btn ghost close2" type="button">Close</button></div><div class="fine">Payments are processed securely by Stripe. The 7 day cancellation policy applies.</div></div></div>
+
+  <script src="assets/stripe-links.js"></script>
+  <script src="assets/site-config.js"></script>
+  <script>
+    const modal=document.getElementById('paymentModal');
+    const modalTitle=document.getElementById('modalTitle');
+    const modalText=document.getElementById('modalText');
+    const modalPrimary=document.getElementById('modalPrimary');
+    const guestSize=document.getElementById('guestSize');
+    const bookingSelect=document.getElementById('tour');
+    function showModal(title,text,href,label){modalTitle.textContent=title;modalText.textContent=text;modalPrimary.textContent=label||'Continue';modalPrimary.href=href||'#booking';guestSize.style.display='none';modal.classList.add('open');modal.setAttribute('aria-hidden','false')}
+    function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true')}
+    document.querySelector('.close').onclick=closeModal;document.querySelector('.close2').onclick=closeModal;modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+    document.querySelectorAll('.inquiry').forEach(b=>b.addEventListener('click',()=>{bookingSelect.value=b.dataset.tour;document.getElementById('booking').scrollIntoView({behavior:'smooth'})}));
+    document.querySelectorAll('.pay').forEach(b=>b.addEventListener('click',()=>{const key=b.dataset.key,mode=b.dataset.mode,url=(window.KYOTO_BEN_PAYMENTS?.[key]||{})[mode];if(url){window.location.href=url;return}const t=mode==='deposit'?'Reserve with ¥10,000 deposit':'Pay in full';showModal(t,'The Stripe Payment Link is not live in this preview yet. Send your booking details now and the secure payment link can be added as soon as Stripe is ready.','#booking','Send booking details')}));
+    document.querySelector('.geisha-full').addEventListener('click',()=>{guestSize.style.display='block';modalTitle.textContent='Pay Geisha Boat in full';modalText.textContent='Choose your group size. The secure Stripe link will open once it is added to the live website.';modalPrimary.textContent='Continue';modalPrimary.href='#';modal.classList.add('open');modalPrimary.onclick=(e)=>{const g=document.getElementById('boatGuests').value;const url=(window.KYOTO_BEN_PAYMENTS?.geishaBoat||{})['full'+g];if(url){modalPrimary.href=url}else{e.preventDefault();closeModal();document.getElementById('tour').value='Geisha Shamisen Boat & Kyoto Sake';document.getElementById('booking').scrollIntoView({behavior:'smooth'})}}});
+    document.getElementById('inquiryForm').addEventListener('submit',e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.currentTarget).entries());const subject=`KYOTO BEN booking inquiry: ${d.tour}`;const body=[`Hi Ben,`,``,`I would like to ask about ${d.tour}.`,`Preferred date: ${d.date||'Flexible'}`,`Guests: ${d.guests}`,`Name: ${d.name}`,`Email: ${d.email}`,`Questions: ${d.notes||'-'}`,``,`I understand the cancellation policy: full refund for cancellations made 7 or more calendar days before the scheduled start. Cancellations made fewer than 7 days before the scheduled start are non refundable.`].join('\n');window.location.href=`mailto:booking@kyotoben.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`});
+  </script>
+</body>
+</html>
