@@ -1,0 +1,27 @@
+KYOTO BEN — SEO & MOBILE BOOKING UPDATE
+
+This package contains ONLY changed/new text files. It deliberately does NOT
+contain assets/photos: preserve your existing photos and original filenames.
+
+In your existing KYOTOBEN/kyotoben-site repository:
+1. Keep the complete assets/ folder, all photos, site-config.js and stripe-links.js.
+2. Replace root index.html with the file in this package.
+3. Add the three new *.html tour pages and tour-pages.css to the repository root.
+4. Replace root robots.txt and sitemap.xml with the supplied files.
+5. Keep CNAME and your existing privacy, terms, disclosure and cancellation pages.
+6. Commit to main and push. Verify custom domain deployment and all pictures.
+7. Submit https://kyotoben.com/sitemap.xml in Google Search Console.
+
+CRITICAL: The new homepage intentionally prevents generic Stripe payment buttons
+from opening before Ben confirms the chosen date and quote. Payment links remain
+in your existing assets/stripe-links.js for manual confirmed invoices.
+
+GuruWalk reviews: no outbound free-booking link is added. Review source and
+claim should be verified and agreed before introducing a public badge.
+
+Pricing: ¥18,000 Arashiyama group limits and ¥35,000 full-day group limits
+remain confirmation-dependent, to avoid inventing an unsupported allowance.
+
+PHOTO QUALITY: Upload optimized WebP variants in assets/photos/ only after
+carefully updating the matching paths in assets/site-config.js; do not change
+the original photos until you have visually checked mobile crops.
